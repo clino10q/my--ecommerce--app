@@ -110,11 +110,11 @@ export default function LandingPage({ currentUser, addToCart }) {
   const successIcon = successful.icon;
 
   return (
-    <div className="bg-white dark:bg-neutral-950">
+    <div className="bg-white">
       <LandingNav />
       {/* HERO */}
       <section
-        className="relative overflow-hidden bg-gradient-to-br from-emerald-50 via-white to-emerald-100 dark:from-neutral-950 dark:to-neutral-900"
+        className="relative overflow-hidden bg-gradient-to-br from-emerald-50 via-white to-emerald-100 "
         data-aos="fade-down"
       >
         {/* Background circles */}
@@ -128,13 +128,13 @@ export default function LandingPage({ currentUser, addToCart }) {
             {/* LEFT */}
 
             <div>
-              <h1 className="mt-6 text-5xl lg:text-7xl font-black leading-tight text-gray-900 dark:text-white">
+              <h1 className="mt-6 text-5xl lg:text-7xl font-black leading-tight text-gray-900 ">
                 Elevate
                 <br />
                 Your Style.
               </h1>
 
-              <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400 max-w-xl">
+              <p className="mt-6 text-lg leading-8 text-gray-600  max-w-xl">
                 Shop premium fashion, electronics and jewelry curated for
                 everyday life. Discover quality products you'll love at prices
                 you'll appreciate.
@@ -154,7 +154,7 @@ export default function LandingPage({ currentUser, addToCart }) {
                       .getElementById("categories")
                       ?.scrollIntoView({ behavior: "smooth" })
                   }
-                  className="px-8 py-4 rounded-xl border border-gray-300 hover:bg-gray-100 dark:hover:bg-neutral-800 transition"
+                  className="px-8 py-4 rounded-xl border border-gray-300 hover:bg-gray-100  transition"
                 >
                   Browse Categories
                 </button>
@@ -199,7 +199,7 @@ export default function LandingPage({ currentUser, addToCart }) {
         </div>
       </section>{" "}
       {/* ===================== TRUST SECTION ===================== */}
-      <section className="border-y border-gray-200 dark:border-neutral-800 bg-white dark:bg-neutral-950">
+      <section className="border-y border-gray-200  bg-white ">
         <div
           className="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-8"
           data-aos="fade-right"
@@ -230,11 +230,11 @@ export default function LandingPage({ currentUser, addToCart }) {
           data-aos="fade-up"
         >
           <div>
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
+            <h2 className="text-4xl font-bold text-gray-900 ">
               Shop by Category
             </h2>
 
-            <p className="mt-3 text-gray-500 dark:text-gray-400">
+            <p className="mt-3 text-gray-500 ">
               Find exactly what you're looking for.
             </p>
           </div>
@@ -253,9 +253,9 @@ export default function LandingPage({ currentUser, addToCart }) {
                 rounded-2xl
                 border
                 border-gray-200
-                dark:border-neutral-800
+                
                 bg-white
-                dark:bg-neutral-900
+               
                 p-8
                 text-left
                 transition
@@ -268,11 +268,11 @@ export default function LandingPage({ currentUser, addToCart }) {
             >
               <div className="text-emerald-600 mb-6">{icons[category]}</div>
 
-              <h3 className="text-xl font-bold capitalize text-gray-900 dark:text-white">
+              <h3 className="text-xl font-bold capitalize text-gray-900">
                 {category}
               </h3>
 
-              <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">
+              <p className="mt-3 text-sm text-gray-500 ">
                 Explore our latest collection of {category.toLowerCase()}.
               </p>
 
@@ -296,14 +296,14 @@ export default function LandingPage({ currentUser, addToCart }) {
         </div>
       </section>
       {/* ===================== FEATURED PRODUCTS ===================== */}
-      <section className="bg-gray-50 dark:bg-neutral-900 py-24">
+      <section className="bg-gray-50  py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-14" data-aos="fade-up">
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
+            <h2 className="text-4xl font-bold text-gray-900 ">
               Featured Products
             </h2>
 
-            <p className="mt-4 text-gray-500 dark:text-gray-400">
+            <p className="mt-4 text-gray-500 ">
               Hand-picked favorites loved by our customers.
             </p>
           </div>
@@ -316,7 +316,6 @@ export default function LandingPage({ currentUser, addToCart }) {
                   group
                   rounded-2xl
                   bg-white
-                  dark:bg-neutral-950
                   overflow-hidden
                   shadow-sm
                   hover:shadow-2xl
@@ -339,7 +338,7 @@ export default function LandingPage({ currentUser, addToCart }) {
                 </div>
 
                 <div className="p-6">
-                  <h3 className="font-bold h-12 overflow-hidden text-gray-900 dark:text-white">
+                  <h3 className="font-bold h-12 overflow-hidden text-gray-900 ">
                     {product.title}
                   </h3>
 
@@ -380,11 +379,11 @@ export default function LandingPage({ currentUser, addToCart }) {
       {/* ===================== TESTIMONIALS ===================== */}
       <section className="max-w-7xl mx-auto px-6 py-24">
         <div className="text-center mb-14" data-aos="slide-right">
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-4xl font-bold text-gray-900 ">
             What Our Customers Say
           </h2>
 
-          <p className="mt-4 text-gray-500 dark:text-gray-400">
+          <p className="mt-4 text-gray-500 ">
             Thousands of shoppers trust Uniform every day.
           </p>
         </div>
@@ -409,7 +408,7 @@ export default function LandingPage({ currentUser, addToCart }) {
           ].map((item, index) => (
             <div
               key={item.name}
-              className="rounded-2xl bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 p-8 hover:shadow-xl transition"
+              className="rounded-2xl bg-white  border border-gray-200  p-8 hover:shadow-xl transition"
               data-aos="zoom-in"
               data-aos-delay={index * 500}
               data-aos-offset="200"
@@ -424,13 +423,9 @@ export default function LandingPage({ currentUser, addToCart }) {
                 ))}
               </div>
 
-              <p className="text-gray-600 dark:text-gray-400 leading-7">
-                "{item.review}"
-              </p>
+              <p className="text-gray-600  leading-7">"{item.review}"</p>
 
-              <h3 className="mt-6 font-bold text-gray-900 dark:text-white">
-                {item.name}
-              </h3>
+              <h3 className="mt-6 font-bold text-gray-900 ">{item.name}</h3>
             </div>
           ))}
         </div>
@@ -486,13 +481,13 @@ export default function LandingPage({ currentUser, addToCart }) {
         </div>
       </section>
       {/* ===================== CTA ===================== */}
-      <section className="py-24 bg-gray-50 dark:bg-neutral-950">
+      <section className="py-24 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center px-6">
-          <h2 className="text-5xl font-black text-gray-900 dark:text-white">
+          <h2 className="text-5xl font-black text-gray-900 ">
             Ready to Upgrade Your Style?
           </h2>
 
-          <p className="mt-5 text-lg text-gray-500 dark:text-gray-400">
+          <p className="mt-5 text-lg text-gray-500 ">
             Join thousands of happy customers shopping premium fashion,
             electronics, and jewelry.
           </p>
@@ -578,16 +573,14 @@ export default function LandingPage({ currentUser, addToCart }) {
 function TrustItem({ icon, title, text }) {
   return (
     <div className="flex items-center gap-5">
-      <div className="w-14 h-14 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center justify-center text-emerald-600">
+      <div className="w-14 h-14 rounded-full bg-emerald-100  flex items-center justify-center text-emerald-600">
         {icon}
       </div>
 
       <div>
-        <h3 className="font-bold text-lg text-gray-900 dark:text-white">
-          {title}
-        </h3>
+        <h3 className="font-bold text-lg text-gray-900 ">{title}</h3>
 
-        <p className="text-gray-500 dark:text-gray-400">{text}</p>
+        <p className="text-gray-500 ">{text}</p>
       </div>
     </div>
   );
