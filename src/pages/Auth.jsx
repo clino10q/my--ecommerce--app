@@ -82,28 +82,28 @@ export default function Auth({ setCurrentUser, addToCart }) {
   }
 
   return (
-    <div className="min-h-screen bg-white dark:bg-neutral-950 flex items-center justify-center px-6">
+    <div className="min-h-screen bg-white  flex items-center justify-center px-6">
       <div className="w-full max-w-sm">
         <Link
           to="/"
-          className="block text-center text-2xl font-semibold text-black dark:text-white mb-8"
+          className="block text-center text-2xl font-semibold text-black  mb-8"
         >
           Uniform
         </Link>
 
         <div
-          className="p-6 rounded-md bg-white dark:bg-neutral-900
-                         border border-gray-200 dark:border-neutral-800"
+          className="p-6 rounded-md bg-white 
+                         border border-gray-200 "
         >
           {/* Mode toggle */}
-          <div className="flex mb-6 rounded-md bg-gray-100 dark:bg-neutral-800 p-1">
+          <div className="flex mb-6 rounded-md bg-gray-100  p-1">
             <button
               onClick={() => switchMode("login")}
               className={`flex-1 py-2 rounded-md text-sm font-bold transition-colors cursor-pointer
                 ${
                   mode === "login"
-                    ? "bg-white dark:bg-neutral-950 text-black dark:text-white shadow-sm"
-                    : "text-gray-500 dark:text-gray-400"
+                    ? "bg-white  text-black  shadow-sm"
+                    : "text-gray-500 "
                 }`}
             >
               Log In
@@ -113,18 +113,18 @@ export default function Auth({ setCurrentUser, addToCart }) {
               className={`flex-1 py-2 rounded-md text-sm font-bold transition-colors cursor-pointer
                 ${
                   mode === "signup"
-                    ? "bg-white dark:bg-neutral-950 text-black dark:text-white shadow-sm"
-                    : "text-gray-500 dark:text-gray-400"
+                    ? "bg-white  text-black shadow-sm"
+                    : "text-gray-500 "
                 }`}
             >
               Sign Up
             </button>
           </div>
 
-          <h1 className="text-xl font-bold text-black dark:text-white mb-1">
+          <h1 className="text-xl font-bold text-black  mb-1">
             {mode === "login" ? "Welcome back" : "Create your account"}
           </h1>
-          <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">
+          <p className="text-sm text-gray-500  mb-6">
             {mode === "login"
               ? "Log in to continue shopping."
               : "Sign up to start shopping with Uniform."}
@@ -133,9 +133,7 @@ export default function Auth({ setCurrentUser, addToCart }) {
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             {mode === "signup" && (
               <div>
-                <label className="text-xs text-gray-500 dark:text-gray-400">
-                  Full Name
-                </label>
+                <label className="text-xs text-gray-500 ">Full Name</label>
                 <div className="relative mt-1">
                   <IconUser
                     size={18}
@@ -145,41 +143,37 @@ export default function Auth({ setCurrentUser, addToCart }) {
                     value={formData.name}
                     onChange={(e) => handleChange("name", e.target.value)}
                     placeholder="Jane Doe"
-                    className="w-full pl-10 pr-3 py-2 rounded-md border border-gray-200 dark:border-neutral-700
-                               bg-gray-50 dark:bg-neutral-800 text-sm text-black dark:text-white
+                    className="w-full pl-10 pr-3 py-2 rounded-md border border-gray-200 
+                               bg-gray-50 dark:bg-neutral-800 text-sm text-black 
                                focus:outline-none focus:ring-2 focus:ring-emerald-400
-                               placeholder:text-gray-400 dark:placeholder:text-gray-500"
+                               placeholder:text-gray-400"
                   />
                 </div>
               </div>
             )}
 
             <div>
-              <label className="text-xs text-gray-500 dark:text-gray-400">
-                Email
-              </label>
+              <label className="text-xs text-gray-500 ">Email</label>
               <div className="relative mt-1">
                 <IconMail
                   size={18}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+                  className="absolute left-3 top-1/2 -translate-y-1/2 "
                 />
                 <input
                   type="email"
                   value={formData.email}
                   onChange={(e) => handleChange("email", e.target.value)}
                   placeholder="jane@example.com"
-                  className="w-full pl-10 pr-3 py-2 rounded-md border border-gray-200 dark:border-neutral-700
-                             bg-gray-50 dark:bg-neutral-800 text-sm text-black dark:text-white
+                  className="w-full pl-10 pr-3 py-2 rounded-md border border-gray-200 
+                             bg-gray-50 text-sm text-black 
                              focus:outline-none focus:ring-2 focus:ring-emerald-400
-                             placeholder:text-gray-400 dark:placeholder:text-gray-500"
+                             placeholder:text-gray-400 "
                 />
               </div>
             </div>
 
             <div>
-              <label className="text-xs text-gray-500 dark:text-gray-400">
-                Password
-              </label>
+              <label className="text-xs text-gray-500 ">Password</label>
               <div className="relative mt-1">
                 <IconLock
                   size={18}
@@ -190,18 +184,18 @@ export default function Auth({ setCurrentUser, addToCart }) {
                   value={formData.password}
                   onChange={(e) => handleChange("password", e.target.value)}
                   placeholder="••••••••"
-                  className="w-full pl-10 pr-3 py-2 rounded-md border border-gray-200 dark:border-neutral-700
-                             bg-gray-50 dark:bg-neutral-800 text-sm text-black dark:text-white
+                  className="w-full pl-10 pr-3 py-2 rounded-md border border-gray-200 
+                             bg-gray-50  text-sm text-black 
                              focus:outline-none focus:ring-2 focus:ring-emerald-400
-                             placeholder:text-gray-400 dark:placeholder:text-gray-500"
+                             placeholder:text-gray-400 "
                 />
               </div>
             </div>
 
             {error && (
               <div
-                className="flex items-center gap-2 text-xs text-red-600 dark:text-red-400
-                               bg-red-50 dark:bg-red-950/40 px-3 py-2 rounded-md"
+                className="flex items-center gap-2 text-xs text-red-600 \
+                               bg-red-50 px-3 py-2 rounded-md"
               >
                 <IconAlertCircle size={14} className="flex-shrink-0" />
                 {error}
@@ -218,13 +212,13 @@ export default function Auth({ setCurrentUser, addToCart }) {
           </form>
         </div>
 
-        <p className="text-center text-xs text-gray-500 dark:text-gray-400 mt-6">
+        <p className="text-center text-xs text-gray-500  mt-6">
           {mode === "login"
             ? "Don't have an account? "
             : "Already have an account? "}
           <button
             onClick={() => switchMode(mode === "login" ? "signup" : "login")}
-            className="text-emerald-600 dark:text-emerald-400 font-bold hover:underline cursor-pointer"
+            className="text-emerald-600  font-bold hover:underline cursor-pointer"
           >
             {mode === "login" ? "Sign up" : "Log in"}
           </button>
