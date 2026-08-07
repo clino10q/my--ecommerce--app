@@ -42,16 +42,28 @@ export default function LandingNav() {
           }
         `}
         >
-          <a className="font-medium text-emerald-400 cursor-pointer transition hover:text-green-800">
+          <a
+            className="font-medium text-emerald-400 cursor-pointer transition hover:text-green-800"
+            href="#hero"
+          >
             Home
           </a>
-          <a className="font-medium text-emerald-400 cursor-pointer transition hover:text-green-800">
+          <a
+            className="font-medium text-emerald-400 cursor-pointer transition hover:text-green-800"
+            href="#categories"
+          >
             Category
           </a>
-          <a className="font-medium text-emerald-400 cursor-pointer transition hover:text-green-800">
+          <a
+            className="font-medium text-emerald-400 cursor-pointer transition hover:text-green-800"
+            href="#products"
+          >
             Products
           </a>
-          <a className="font-medium text-emerald-400 cursor-pointer transition hover:text-green-800">
+          <a
+            className="font-medium text-emerald-400 cursor-pointer transition hover:text-green-800"
+            href="#testimonial"
+          >
             Testimonials
           </a>
         </div>

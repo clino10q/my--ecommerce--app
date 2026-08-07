@@ -116,6 +116,7 @@ export default function LandingPage({ currentUser, addToCart }) {
       <section
         className="relative overflow-hidden bg-gradient-to-br from-emerald-50 via-white to-emerald-100 "
         data-aos="fade-down"
+        id="hero"
       >
         {/* Background circles */}
 
@@ -296,7 +297,7 @@ export default function LandingPage({ currentUser, addToCart }) {
         </div>
       </section>
       {/* ===================== FEATURED PRODUCTS ===================== */}
-      <section className="bg-gray-50  py-24">
+      <section className="bg-gray-50  py-24" id="products">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-14" data-aos="fade-up">
             <h2 className="text-4xl font-bold text-gray-900 ">
@@ -377,7 +378,7 @@ export default function LandingPage({ currentUser, addToCart }) {
         </div>
       </section>{" "}
       {/* ===================== TESTIMONIALS ===================== */}
-      <section className="max-w-7xl mx-auto px-6 py-24">
+      <section className="max-w-7xl mx-auto px-6 py-24" id="testimonial">
         <div className="text-center mb-14" data-aos="slide-right">
           <h2 className="text-4xl font-bold text-gray-900 ">
             What Our Customers Say
@@ -410,7 +411,7 @@ export default function LandingPage({ currentUser, addToCart }) {
               key={item.name}
               className="rounded-2xl bg-white  border border-gray-200  p-8 hover:shadow-xl transition"
               data-aos="zoom-in"
-              data-aos-delay={index * 500}
+              data-aos-delay={index * 200}
               data-aos-offset="200"
             >
               <div className="flex mb-4">
