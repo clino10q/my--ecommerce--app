@@ -12,9 +12,10 @@ import {
   IconDeviceLaptop,
   IconDiamond,
   IconShirt,
-  IconCheckbox, 
+  IconCheckbox,
   IconSparklesFilled,
 } from "@tabler/icons-react";
+import LandingNav from "./LandingNav";
 
 export default function LandingPage({ currentUser, addToCart }) {
   useEffect(() => {
@@ -110,6 +111,7 @@ export default function LandingPage({ currentUser, addToCart }) {
 
   return (
     <div className="bg-white dark:bg-neutral-950">
+      <LandingNav />
       {/* HERO */}
       <section
         className="relative overflow-hidden bg-gradient-to-br from-emerald-50 via-white to-emerald-100 dark:from-neutral-950 dark:to-neutral-900"
@@ -126,13 +128,6 @@ export default function LandingPage({ currentUser, addToCart }) {
             {/* LEFT */}
 
             <div>
-              <span className="inline-flex items-center rounded-full bg-emerald-100 text-emerald-700 px-4 py-2 font-semibold text-sm">
-                <span className="text-yellow-600">
-                  <IconSparklesFilled />{" "}
-                </span>
-                New Arrivals
-              </span>
-
               <h1 className="mt-6 text-5xl lg:text-7xl font-black leading-tight text-gray-900 dark:text-white">
                 Elevate
                 <br />
