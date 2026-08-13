@@ -41,9 +41,7 @@ export default function PageList({
             </h2>
           </Link>
 
-          <h3 className="font-bold text-sm sm:text-base dark:text-gray-300">
-            ${paging.price}
-          </h3>
+          <h1>Sup</h1>
         </div>
 
         <div className="flex gap-2 justify-between w-full items-center">
