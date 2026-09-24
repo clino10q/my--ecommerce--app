@@ -1561,4 +1561,17 @@ export const Data = [
       count: 890,
     },
   },
+  {
+    id: 133,
+    title: "Odueko Enoch",
+    price: 180.99,
+    description: "The realest nigga wey you fit ever actually sight bro",
+    category: "Men's Clothing",
+    image:
+      "https://cdn.phototourl.com/member/2026-09-24-bdf14f13-dcb3-4a1b-8991-184e54507b50.jpg",
+    rating: {
+      rate: 5.0,
+      count: 999,
+    },
+  },
 ];
